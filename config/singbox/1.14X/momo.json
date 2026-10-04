@@ -3,11 +3,11 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "local", "prefer_go": true},
-      {"tag": "ali", "type": "udp", "server": "192.168.88.8"},
-      {"tag": "tx", "type": "https", "server": "doh.pub", "domain_resolver": "hosts"},
+      {"tag": "ali", "type": "udp", "server": "192.168.88.8", "detour": "直连"},
+      {"tag": "tx", "type": "https", "server": "doh.pub", "domain_resolver": "hosts", "detour": "直连"},
       {"tag": "google", "type": "https", "server": "8.8.8.8", "detour": "默认代理"},
       {"tag": "fake-ip-dns-server", "type": "fakeip", "inet4_range": "198.19.0.0/16"},
-      {"type": "hosts", "tag": "hosts", "predefined": {"doh.pub": ["1.12.12.21", "120.53.53.53"]}}
+      {"type": "hosts", "tag": "hosts", "predefined": {"doh.pub": ["223.5.5.5", "223.6.6.6"]}}
     ],
     "rules": [
       {"query_type": ["HTTPS", "SVCB"], "action": "reject"},
