@@ -3,7 +3,7 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "local", "prefer_go": true},
-      {"tag": "ali", "type": "http", "server": "192.168.88.8"},
+      {"tag": "ali", "type": "https", "server": "119.29.29.29"},
       {"tag": "tx", "type": "https", "server": "doh.pub", "domain_resolver": "hosts"},
       {"tag": "google", "type": "https", "server": "8.8.8.8", "detour": "默认代理"},
       {"tag": "fake-ip-dns-server", "type": "fakeip", "inet4_range": "198.19.0.0/16"},
