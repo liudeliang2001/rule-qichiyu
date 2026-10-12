@@ -134,7 +134,7 @@
     {
       "tag": "tproxy-in",
       "type": "tproxy",
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 7891
     },
     {
